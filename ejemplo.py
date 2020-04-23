@@ -23,3 +23,12 @@ n2: Indica el final del vector de muestras
 #Si la diferencia n-n0 es mayor o igual a 0, como resultado se obtiene true es decir se añade 1 al vector x, de lo contrario su valor es 0
 
     return [x,n]    #Finaliza la ejecución de la función escalon y devuelve [x,n]
+
+n, x = impseq(2,-3, 2)
+#Se grafica la señal y se personaliza indicando título de los ejes, título de la gráfica, cuadrícula
+plt.stem (n, x, use_line_collection=True)  
+plt.xlabel("n")
+plt.ylabel("[x(n)]")
+plt.grid()
+plt.title("IMPULSO UNITARIO")
+plt.show()
